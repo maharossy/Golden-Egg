@@ -1,13 +1,24 @@
 $kurale: 'Kurale', serif;
 $os: 'Open Sans', sans-serif;
+$white: #fff;
+$yellow: #e8c300;
+$color: #000;
+$wrap: 1470px;
+$container: 1200px;
+$mc: 0 auto;
+$text: 18px;
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
 }
 
 body {
+    background: $white;
     font-family: $os;
-    background: grey;
+    color: $color;
+    font-size: $text;
 }
