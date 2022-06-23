@@ -1,7 +1,6 @@
 .home {
     min-height: 800px;
     position: relative;
-    outline: 1px solid red;
     &__img,
     &__video {
         width: 100%;
@@ -135,7 +134,8 @@
     color: $white;
     font-weight: 700;
     font-size: 12px;
-    transform: rotate(-90deg);
-    margin-top: 130px;
-    margin-left: -75px;
+    transform: rotate(180deg);
+    width: 85px;
+    margin-top: 60px;
+    writing-mode: vertical-rl;
 }
