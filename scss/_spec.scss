@@ -1,0 +1,56 @@
+.spec__container {
+    position: relative;
+    h6 {
+        color: $white;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        text-align: center;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        top: 45px;
+    }
+}
+
+.spec__slide {
+    background: url(/img/bg-slide.jpg) center/cover no-repeat;
+    padding: 105px 0 95px;
+}
+
+.spec__slide-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $container;
+    margin: $mc;
+    padding: 0 15px;
+}
+
+.spec__text {
+  color: $white;
+  text-align: center;
+  width: 50%;
+  max-width: 600px;
+  padding-left: 30px;  
+}
+
+.spec__img {
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+    text-align: right;
+    .circle {
+        left: 0;
+        transform: translate(-40%, -50%);
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        filter: drop-shadow(0px 0px 50px $black-opacity);
+    }
+}
+
