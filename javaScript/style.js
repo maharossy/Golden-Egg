@@ -5,12 +5,6 @@ const  innerTabs = document.querySelector('.tabs'),
 window.addEventListener('load', overFlowtabs);
 window.addEventListener('resize', overFlowtabs);       
 
-btnMenu.forEach(function (item) {
-    item.addEventListener('click', function() {
-        this.classList.toggle('active');
-    });
-});
-
 function overFlowtabs() {
     if (innerTabs.offSetWidth > outerTabs.offSetWidth) {
         innerTabs.classList.add('overflow');
@@ -18,3 +12,26 @@ function overFlowtabs() {
         innerTabs.classList.remove('overflow');
     }
 };
+
+
+const tabs = document.querySelector('.tabs'),
+      menuSlider = document.querySelectorAll('.menu__slider-block');
+
+tabs.addEventListener('click', function(e) {
+    if (e.target.classList.contains('tabs__item')) {
+        this.querySelectorAll('.tabs__item').forEach(item => item.classList.remove('active')); 
+        e.target.classList.add('active');
+    }
+
+    menuSlider.forEach(item => item.classList.remove('show'));
+
+    let tabIndex = e.target.dataset.tab;
+    let thisSwiper = document.querySelector(tabIndex);
+    thisSwiper.classList.add('show');
+});
+
+
+
+
+
+ 
