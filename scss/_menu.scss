@@ -86,3 +86,40 @@
         z-index: 2;
     }
 }
+
+.menu__item {
+    max-width: 510px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    &-img {
+        width: 260px;
+        height: 170px;
+        object-fit: cover;
+        border: 4px solid $yellow;
+    }
+    &-text {
+        max-width: 220px;
+        margin-left: 25px;
+    }
+}
+
+.menu__title,
+.menu__price {
+    font-size: 18px;
+    color: #333;
+    font-family: $kurale;
+    font-weight: 400;
+}
+
+.menu__title {
+    border-bottom: 1px solid #333;
+    display: inline-block;
+}
+
+.menu__desc {
+    font-size: 12px;
+    line-height: 14px;
+    color: $gray-opacity;
+    margin-top: 24px;
+}

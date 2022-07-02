@@ -29,9 +29,3 @@ tabs.addEventListener('click', function(e) {
     let thisSwiper = document.querySelector(tabIndex);
     thisSwiper.classList.add('show');
 });
-
-
-
-
-
- 
