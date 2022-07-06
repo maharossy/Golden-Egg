@@ -1,0 +1,113 @@
+.contacts {
+    padding: 50px 0 90px;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__intro {
+        text-align: center;
+        max-width: 520px;
+        margin: 0 auto;
+        margin-bottom: 40px; 
+    }
+}
+
+.contacts__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    input,
+    textarea {
+        width: calc(33.333% - 16px);
+        margin: 0 8px 16px;
+        height: 60px;
+        border-radius: 5px;
+        background: #e5e5e5;
+        border: none;
+        padding: 0 20px;
+        font-size: 14px;
+        outline: none;
+        color: #000;
+        border: 1px solid transparent;
+        &::placeholder {
+            color: rgba(51, 51, 51, 0.5);;
+        }
+        &:focus {
+            border: 1px solid #e8c300;
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 120px;
+        padding: 20px;
+        resize: none;
+    }
+}
+
+.contacts__data-submit {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    button {
+        width: 50%;
+        max-width: 580px;
+        background: #e8c300;
+        text-transform: uppercase;
+        height: 60px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px; 
+        color: white;
+        font-size: 13px;
+        transition: .3s;
+        &:hover {
+            background: darken(#e8c300, 10%);
+        }
+    }
+}
+
+.contacts__data {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacts__data-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 0.5);
+    margin-right: 20px;
+    a {
+        color: rgba(51, 51, 51, 0.5);
+    }
+    svg {
+        width: 14px;
+        height: 16px;
+        margin-right: 5px;
+    }
+}
+
+.map {
+    width: 100%;
+    height: 475px;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
